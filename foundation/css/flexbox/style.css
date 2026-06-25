@@ -1,0 +1,86 @@
+.flex-container {
+    border: 7px solid green;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.one {
+    display: flex;
+    
+    padding: 15px;
+    flex: 1;
+    background: rgb(2, 97, 97);
+    border: 3px solid blue;
+    margin-bottom: 10px;
+}
+.one div {
+    
+    padding: 15px;
+    flex: 1;
+    margin-left: 10px ;
+    background: rgb(255, 97, 97);
+    border: 3px solid black;
+    
+
+}
+.one-two {
+
+    display: flex;
+    /* flex-direction: column; */
+    background: yellow;
+    /* padding: 2px;     */
+    border: 3px solid aqua;
+}
+.one-two div {
+    background-color: whitesmoke;
+    flex: 1;
+
+}
+
+.two {
+    display: flex;
+    padding: 15px;
+    flex: 1;
+    background: rgb(2, 97, 97);
+    border: 3px solid blue;
+    margin-bottom: 10px;
+}
+.two div {
+    padding: 15px;
+    flex: 1;
+    margin-left: 10px;
+    background: aqua;
+    border: 3px solid purple;
+}
+.two-two {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid peru;
+} 
+.two-two div {
+    flex: 1;
+    margin-bottom: 5px;
+    background: darkolivegreen;
+}
+
+.three {
+    display: flex;
+    padding: 15px;
+    flex: 1;
+    background: rgb(2, 97, 97);
+    border: 3px solid blue;
+    margin-bottom: 10px;
+}
+.three div {
+    padding: 35px;
+    border: 3px solid pink;
+    background: darkviolet;
+    flex: 1;
+    margin-left: 7px;
+}
+
+.three-two-smaller {
+    padding: 14px;
+}
