@@ -1,3 +1,62 @@
+class Vikings
+    attr_accessor :name, :age, :health, :strength
+    def initialize(name, age, health, strength)
+      @name = name 
+      @age = age 
+      @health = health 
+      @strength = strength 
+    end
+
+    def attack(enemy)
+      return "Attack... on #{enemy} fuckers..."
+    end
+
+    
+    # get method
+    def health
+        return @health
+    end
+    
+    # set method 
+    def health=(new_health)
+        @health = new_health
+    end 
+    
+    def sout(sout)
+      return sout 
+    end
+
+    def take_damage(damage)
+      self.health -= damage
+      self.sout("Aahhh...") 
+    end
+
+    def revive
+      if self.health < 100  
+        self.health += 1 
+      else 
+        return "You haven't taken a scratch yet."
+      end
+    end
+    
+
+end
+
+ragnar = Vikings.new("King Ragnar", 27, 100, 20)
+# puts ragnar.attack("False Knights")
+# puts ragnar.health
+# puts ragnar.health=(99)
+puts ragnar.health
+puts ragnar.take_damage(2)
+puts ragnar.health
+puts ragnar.revive
+puts ragnar.revive
+puts ragnar.health
+puts ragnar.revive
+
+
+
+
 =begin 
 class Dog
 
@@ -89,27 +148,29 @@ puts gopal.user_id
 
 ### Trying another example  
 ##    
-class Student 
-  attr_accessor :name, :age, :dept, :lang
-  attr_reader :roll_no
+# class Student 
+#   attr_accessor :name, :age, :dept, :lang
+#   attr_reader :roll_no
 
-  def initialize(name, age, dept, lang, roll_no)
-    @name = name 
-    @age = age 
-    @dept = dept 
-    @lang = lang 
-    @roll_no = roll_no
+#   def initialize(name, age, dept, lang, roll_no)
+#     @name = name 
+#     @age = age 
+#     @dept = dept 
+#     @lang = lang 
+#     @roll_no = roll_no
 
-  end
-end
-ujjal = Student.new("Ujjal Das", 20, "BCA", "JavaScript", 11)
+#   end
+# end
+# ujjal = Student.new("Ujjal Das", 20, "BCA", "JavaScript", 11)
 
-ujjal.age = 21
-ujjal.lang = "Python"
-# ujjal.roll_no = 12 only reader
+# ujjal.age = 21
+# ujjal.lang = "Python"
+# # ujjal.roll_no = 12 only reader
 
-puts ujjal.name 
-puts ujjal.age 
-puts ujjal.dept 
-puts ujjal.lang 
-puts ujjal.roll_no 
+# puts ujjal.name 
+# puts ujjal.age 
+# puts ujjal.dept 
+# puts ujjal.lang 
+# puts ujjal.roll_no 
+
+
